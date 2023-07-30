@@ -6,7 +6,7 @@ const openBrowser = async () =>
     await puppeteer.launch({
         headless: true,
         ignoreHTTPSErrors: true,
-        executablePath: process.env.CHROMIUM_EXECUTABLE_PATH,
+        executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
         args: [
             "--disable-setuid-sandbox",
             "--no-sandbox",

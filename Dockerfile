@@ -3,6 +3,7 @@ FROM ghcr.io/puppeteer/puppeteer:19.7.2
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
     CHROMIUM_EXECUTABLE_PATH=/usr/bin/google-chrome-stable
 
+USER root
 RUN mkdir -p /app
 WORKDIR /app
 
